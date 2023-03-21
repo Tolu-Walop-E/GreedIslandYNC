@@ -87,7 +87,7 @@ class Protag(pygame.sprite.Sprite):
     def gravity(self):
         self.direction.y += self.gravityValue
         self.rect.y += self.direction.y
-        if self.rect.bottom > 720:
+        if self.rect.bottom >= 720:
             self.rect.bottom = 720
 
     def jump(self,jump):
